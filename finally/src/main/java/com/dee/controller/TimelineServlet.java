@@ -135,8 +135,6 @@ public class TimelineServlet extends HttpServlet {
 
             //create a new comment object
             Comment comment1 = new Comment(postID, userID, comment);
-            // save the comment in the database
-
 
             boolean createComment = postDAO.createComment(comment1);
             if (createComment) {
@@ -243,7 +241,6 @@ public class TimelineServlet extends HttpServlet {
 //            e.printStackTrace();
 //        }
 
-
     }
 
     public void updatedPost(HttpServletRequest request, HttpServletResponse response){
@@ -273,8 +270,6 @@ public class TimelineServlet extends HttpServlet {
         }
 
     }
-
-
 
 
 
@@ -311,6 +306,4 @@ public class TimelineServlet extends HttpServlet {
             System.out.println("Unable to display posts");
         }
     }
-
-
 }

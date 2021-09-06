@@ -21,7 +21,6 @@ public class HelloServlet extends HttpServlet {
         } catch (ServletException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override

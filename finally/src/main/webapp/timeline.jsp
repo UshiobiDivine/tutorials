@@ -14,6 +14,7 @@
     Map<Post, List<Comment>> posts = (Map<Post, List<Comment>>) request.getAttribute("userPosts");
     //pageContext.setAttribute("post", posts);
 
+
 %>
 
 <c:set var="posts" value="<%=posts%>"></c:set>
@@ -29,8 +30,6 @@
             font-family: 'Arial Unicode MS';
         }
 
-
-
         a {
             color: #ffffff;
             font-weight: 500;
@@ -40,6 +39,7 @@
             text-decoration: none;
             position: relative;
         }
+
         a::before {
             position: absolute;
             top: 0;
@@ -58,35 +58,24 @@
             -webkit-transform: scale(0);
             transform: scale(0);
         }
-        a:hover::before
-        {
+
+        a:hover::before {
             opacity: 1;
             -webkit-transform: scale(1);
             transform: scale(1);
         }
 
 
-
-
-
-
-
-
-        /* Button used to open the contact form - fixed at the bottom of the page */
+        /*!* Button used to open the contact form - fixed at the bottom of the page *!
         .open-button, .item3333 {
             background-color: #e73d3d;
             color: white;
-            /*padding: 16px 20px;*/
             border: none;
             cursor: pointer;
             opacity: 0.8;
-            /*position: fixed;*/
-            /*bottom: 23px;*/
-            /*right: 28px;*/
-            /*width: 280px;*/
         }
 
-        /* The popup form - hidden by default */
+        !* The popup form - hidden by default *!
         .form-popup {
             display: none;
             position: fixed;
@@ -96,14 +85,14 @@
             z-index: 9;
         }
 
-        /* Add styles to the form container */
+        !* Add styles to the form container *!
         .form-container {
             max-width: 300px;
             padding: 10px;
             background-color: white;
         }
 
-        /* Full-width input fields */
+        !* Full-width input fields *!
         .form-container input[type=text], .form-container input[type=password] {
             width: 100%;
             padding: 15px;
@@ -112,13 +101,13 @@
             background: #f1f1f1;
         }
 
-        /* When the inputs get focus, do something */
+        !* When the inputs get focus, do something *!
         .form-container input[type=text]:focus, .form-container input[type=password]:focus {
             background-color: #ddd;
             outline: none;
         }
 
-        /* Set a style for the submit/login button */
+        !* Set a style for the submit/login button *!
         .form-container .btn {
             background-color: #04AA6D;
             color: white;
@@ -130,15 +119,15 @@
             opacity: 0.8;
         }
 
-        /* Add a red background color to the cancel button */
+        !* Add a red background color to the cancel button *!
         .form-container .cancel {
             background-color: red;
         }
 
-        /* Add some hover effects to buttons */
+        !* Add some hover effects to buttons *!
         .form-container .btn:hover, .open-button:hover {
             opacity: 1;
-        }
+        }*/
 
 
         .container {
@@ -152,8 +141,6 @@
             background-color: rgb(245, 245, 245);
             text-align: center;
         }
-
-
 
 
         .rightgrid, .leftgrid {
@@ -261,7 +248,8 @@
             background-color: #ffffff;
             padding: 15px;
         }
-        button:hover{
+
+        button:hover {
             cursor: pointer;
             color: #ef5c5c;
         }
@@ -300,9 +288,9 @@
 
         }
 
-        header{
+        header {
             display: grid;
-            grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-column-gap: 5px;
         }
 
@@ -330,29 +318,65 @@
     <div class="subcontain">
         <div class="leftgrid">
 
-            <div class="item one" style="border-radius: 6px"><IMG src="images/grandson.png" width="90px" height="90px"> Profile</div>
-            <div class="item two" style=" border-bottom: 2px solid #e8e8e8">TWO Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item three" style=" border-bottom: 2px solid #e8e8e8">THREE Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item four" style=" border-bottom: 2px solid #e8e8e8">FOUR Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item five" style=" border-bottom: 2px solid #e8e8e8">FIVE Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item six" style=" border-bottom: 2px solid #e8e8e8"> SIX Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item seven" style=" border-bottom: 2px solid #e8e8e8">SEVEN Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item eight" style=" border-bottom: 2px solid #e8e8e8">EIGHT Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item nine" style=" border-bottom: 2px solid #e8e8e8">NINE Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item ten" style=" border-bottom: 2px solid #e8e8e8">RIGHT CONTAINER Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+            <div class="item one" style="border-radius: 6px"><IMG src="images/grandson.png" width="90px" height="90px">
+                Profile
+            </div>
+            <div class="item two" style=" border-bottom: 2px solid #e8e8e8">TWO Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item three" style=" border-bottom: 2px solid #e8e8e8">THREE Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item four" style=" border-bottom: 2px solid #e8e8e8">FOUR Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item five" style=" border-bottom: 2px solid #e8e8e8">FIVE Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item six" style=" border-bottom: 2px solid #e8e8e8"> SIX Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item seven" style=" border-bottom: 2px solid #e8e8e8">SEVEN Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item eight" style=" border-bottom: 2px solid #e8e8e8">EIGHT Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item nine" style=" border-bottom: 2px solid #e8e8e8">NINE Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item ten" style=" border-bottom: 2px solid #e8e8e8">RIGHT CONTAINER Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ipsa,
                 quos!
             </div>
 
             <div class="item one" style=" border-bottom: 2px solid #e8e8e8">ONE</div>
-            <div class="item two" style=" border-bottom: 2px solid #e8e8e8">TWO Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item three" style=" border-bottom: 2px solid #e8e8e8">THREE Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item four" style=" border-bottom: 2px solid #e8e8e8">FOUR Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item five" style=" border-bottom: 2px solid #e8e8e8">FIVE Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item six" style=" border-bottom: 2px solid #e8e8e8">SIX Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item seven" style=" border-bottom: 2px solid #e8e8e8">SEVEN Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item eight" style=" border-bottom: 2px solid #e8e8e8">EIGHT Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item nine" style=" border-bottom: 2px solid #e8e8e8">NINE Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quos!</div>
-            <div class="item ten" style=" border-bottom: 2px solid #e8e8e8">RIGHT CONTAINER Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+            <div class="item two" style=" border-bottom: 2px solid #e8e8e8">TWO Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item three" style=" border-bottom: 2px solid #e8e8e8">THREE Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item four" style=" border-bottom: 2px solid #e8e8e8">FOUR Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item five" style=" border-bottom: 2px solid #e8e8e8">FIVE Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item six" style=" border-bottom: 2px solid #e8e8e8">SIX Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item seven" style=" border-bottom: 2px solid #e8e8e8">SEVEN Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item eight" style=" border-bottom: 2px solid #e8e8e8">EIGHT Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item nine" style=" border-bottom: 2px solid #e8e8e8">NINE Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ipsa, quos!
+            </div>
+            <div class="item ten" style=" border-bottom: 2px solid #e8e8e8">RIGHT CONTAINER Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ipsa,
                 quos!
             </div>
 
@@ -378,6 +402,7 @@
 
 
         </div>
+
         <c:forEach var="post" items="${posts}">
             <div class="incenter">
 
@@ -402,7 +427,8 @@
                     <div style="width:30px; margin-left: 445px">
                         <span class="item33"
                               style="background-color: #ef5c5c;  border-radius: 4px; padding: 4px;"><a
-                                href="delete?postID=${post.key.postID}" style="text-decoration: none; link: white;text-align: center;  width: 100px">delete</a></span>
+                                href="delete?postID=${post.key.postID}"
+                                style="text-decoration: none; link: white;text-align: center;  width: 100px">delete</a></span>
 
 
                         <form action="edit" method="post">
@@ -415,8 +441,9 @@
 
                     </div>
 
-<%--                    <div>${ post.key.date}</div>--%>
-                    <div class="post-body" style="margin-bottom: 25px; font-weight: bold; text-align: center; background-color: #c4e0f6; color: #000000">
+                        <%--                    <div>${ post.key.date}</div>--%>
+                    <div class="post-body"
+                         style="margin-bottom: 25px; font-weight: bold; text-align: center; background-color: #c4e0f6; color: #000000">
                         <c:out value="${post.key.body}"/>
                     </div>
 
@@ -457,7 +484,8 @@
 
                         <c:forEach var="comment" items="${post.value}">
 
-                            <div id="comment" class="card" style="border: 2px solid rgba(177,177,177,0.54); border-radius: 5px; padding: 5px; margin-top: 5px">
+                            <div id="comment" class="card"
+                                 style="border: 2px solid rgba(177,177,177,0.54); border-radius: 5px; padding: 5px; margin-top: 5px">
                                 <div>
                                     <h6 style="padding-bottom: -20px">${comment.date}</h6>
                                 </div>
@@ -475,7 +503,10 @@
                             <form action="comment?postID=${post.key.postID}" method="post">
                     <textarea id="secondtextarea" style="resize: vertical; overflow: auto; height: auto;
                     display:block;" name="comment" cols="55" rows="2" placeholder="write a comment"></textarea>
-                                <button type="submit" style="background-color: dodgerblue; border: 2px solid #444444; color: white">comment</button>
+                                <button type="submit"
+                                        style="background-color: dodgerblue; border: 2px solid #444444; color: white">
+                                    comment
+                                </button>
                             </form>
                         </div>
 
@@ -490,26 +521,26 @@
         </c:forEach>
 
 
-        <div class="form-popup" id="myForm">
+       <%-- <div class="form-popup" id="myForm">
             <form action="edit" class="form-container">
 
 
-                <%--                <div ><a href="edit?postID=${post.key.postID}">edit</a></div>--%>
-                <%--            <input name="postID" value="${post.key.postID}" style="display: none">--%>
+                &lt;%&ndash;                <div ><a href="edit?postID=${post.key.postID}">edit</a></div>&ndash;%&gt;
+                &lt;%&ndash;            <input name="postID" value="${post.key.postID}" style="display: none">&ndash;%&gt;
                 <textarea name="edittextarea" style="resize: vertical; overflow: auto; height: auto; display:block;"
                           id="edittextarea" cols="30" rows="10"></textarea>
                 <input type="hidden" name="postID" value="${post.key.postID}">
 
-                <%--                <label for="email"><b>Email</b></label>--%>
-                <%--                <input type="text" placeholder="Enter Email" name="email" required>--%>
+                &lt;%&ndash;                <label for="email"><b>Email</b></label>&ndash;%&gt;
+                &lt;%&ndash;                <input type="text" placeholder="Enter Email" name="email" required>&ndash;%&gt;
 
-                <%--                <label for="psw"><b>Password</b></label>--%>
-                <%--                <input type="password" placeholder="Enter Password" name="psw" required>--%>
+                &lt;%&ndash;                <label for="psw"><b>Password</b></label>&ndash;%&gt;
+                &lt;%&ndash;                <input type="password" placeholder="Enter Password" name="psw" required>&ndash;%&gt;
 
                 <button type="submit" class="btn">Edit</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
             </form>
-        </div>
+        </div>--%>
 
 
     </div>
@@ -517,34 +548,67 @@
     <div class="subcontain">
         <div class="rightgrid">
 
-            <div class="item one" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/groups.png" width="40px" height="40px">  <span style="font-family: 'Arial Unicode MS'; padding-right: 25px">Friends</span> </div>
-            <div class="item two" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/comment.png" width="40px" height="40px"> <span style="font-family: 'Arial Unicode MS';">Comment</span></div>
-            <div class="item three" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/connection.png" width="40px" height="40px"> <span style="font-family: 'Arial Unicode MS'">Connection</span></div>
-            <div class="item four" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/messenger.png" width="40px" height="40px"> <span style="font-family: 'Arial Unicode MS'">Messenger</span></div>
-            <div class="item five" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/social-media.png" width="40px" height="40px"><span style="font-family: 'Arial Unicode MS'">Social</span></div>
-            <div class="item six" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/like.png" width="40px" height="40px"><span style="font-family: 'Arial Unicode MS'">Love</span></div>
-            <div class="item seven" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/messenger%20(2).png" width="40px" height="40px"><span style="font-family: 'Arial Unicode MS'">Messenger</span></div>
-            <div class="item eight" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/social-growth.png" width="40px" height="40px"><span style="font-family: 'Arial Unicode MS'">Growth</span></div>
-            <div class="item nine" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/groups.png" width="40px" height="40px"></div>
-            <div class="item ten" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/facebook.png" width="40px" height="40px">
-            </div><IMG src="images/groups.png" width="40px" height="40px"> Friends</div>
-        <div class="item one" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/groups.png" width="40px" height="40px"> Friends</div>
-        <div class="item two" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/comment.png" width="40px" height="40px"></div>
-        <div class="item three" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/connection.png" width="40px" height="40px"></div>
-        <div class="item four" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/messenger.png" width="40px" height="40px"></div>
-        <div class="item five" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/social-media.png" width="40px" height="40px"></div>
-        <div class="item six" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/like.png" width="40px" height="40px"></div>
-        <div class="item seven" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/messenger%20(2).png" width="40px" height="40px"></div>
-        <div class="item eight" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/social-growth.png" width="40px" height="40px"></div>
-        <div class="item nine" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/groups.png" width="40px" height="40px"></div>
-        <div class="item ten" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/facebook.png" width="40px" height="40px">
-        </div><IMG src="images/groups.png" width="40px" height="40px"> Friends</div>
-
-
+            <div class="item one" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/groups.png" width="40px"
+                                                                                 height="40px"> <span
+                    style="font-family: 'Arial Unicode MS'; padding-right: 25px">Friends</span></div>
+            <div class="item two" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/comment.png" width="40px"
+                                                                                 height="40px"> <span
+                    style="font-family: 'Arial Unicode MS';">Comment</span></div>
+            <div class="item three" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/connection.png"
+                                                                                   width="40px" height="40px"> <span
+                    style="font-family: 'Arial Unicode MS'">Connection</span></div>
+            <div class="item four" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/messenger.png"
+                                                                                  width="40px" height="40px"> <span
+                    style="font-family: 'Arial Unicode MS'">Messenger</span></div>
+            <div class="item five" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/social-media.png"
+                                                                                  width="40px" height="40px"><span
+                    style="font-family: 'Arial Unicode MS'">Social</span></div>
+            <div class="item six" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/like.png" width="40px"
+                                                                                 height="40px"><span
+                    style="font-family: 'Arial Unicode MS'">Love</span></div>
+            <div class="item seven" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/messenger%20(2).png"
+                                                                                   width="40px" height="40px"><span
+                    style="font-family: 'Arial Unicode MS'">Messenger</span></div>
+            <div class="item eight" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/social-growth.png"
+                                                                                   width="40px" height="40px"><span
+                    style="font-family: 'Arial Unicode MS'">Growth</span></div>
+            <div class="item nine" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/groups.png" width="40px"
+                                                                                  height="40px"></div>
+            <div class="item ten" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/facebook.png" width="40px"
+                                                                                 height="40px">
+            </div>
+            <IMG src="images/groups.png" width="40px" height="40px"> Friends
+        </div>
+        <div class="item one" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/groups.png" width="40px"
+                                                                             height="40px"> Friends
+        </div>
+        <div class="item two" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/comment.png" width="40px"
+                                                                             height="40px"></div>
+        <div class="item three" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/connection.png" width="40px"
+                                                                               height="40px"></div>
+        <div class="item four" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/messenger.png" width="40px"
+                                                                              height="40px"></div>
+        <div class="item five" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/social-media.png" width="40px"
+                                                                              height="40px"></div>
+        <div class="item six" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/like.png" width="40px"
+                                                                             height="40px"></div>
+        <div class="item seven" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/messenger%20(2).png"
+                                                                               width="40px" height="40px"></div>
+        <div class="item eight" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/social-growth.png"
+                                                                               width="40px" height="40px"></div>
+        <div class="item nine" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/groups.png" width="40px"
+                                                                              height="40px"></div>
+        <div class="item ten" style=" border-bottom: 2px solid #e8e8e8"><IMG src="images/facebook.png" width="40px"
+                                                                             height="40px">
+        </div>
+        <IMG src="images/groups.png" width="40px" height="40px"> Friends
     </div>
+
+
+</div>
 </div>
 <script>
-    function myFunction() {
+    /*function myFunction() {
         var elmnt = document.getElementsByClassName("itemcenter")[0];
         var cln = elmnt.cloneNode(true);
         cln.style.display = "block";
@@ -565,7 +629,7 @@
 
     function closeForm() {
         document.getElementById("myForm").style.display = "none";
-    }
+    }*/
 </script>
 </body>
 

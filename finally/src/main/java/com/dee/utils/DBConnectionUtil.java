@@ -22,7 +22,7 @@ public class DBConnectionUtil {
             String url = "jdbc:mysql://localhost:3306/facebookDB?useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
             Properties info = new Properties();
             info.put("user", "root");
-            info.put("password", "Am mhb0902");
+            info.put("password", "password");
 
             connection = DriverManager.getConnection(url, info);
 
